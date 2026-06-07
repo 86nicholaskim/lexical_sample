@@ -26,7 +26,7 @@ export const PipelineTracer = ({ pipeline }: { pipeline: PipelineItem[] }) => {
 
       {pipeline.map((item, idx) => (
         <div key={item.step}>
-          <div className={`pipeline-item \${item.active ? 'active' : ''}`}>
+          <div className={`pipeline-item ${item.active ? 'active' : ''}`}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
               <strong style={{ color: item.active ? '#2b6cb0' : '#718096' }}>{item.step}</strong>
               <code style={{ fontSize: '11px', color: '#a0aec0' }}>{item.file}</code>

@@ -20,8 +20,8 @@ export const CustomUI: React.FC<CustomUIProps> = ({ ast }) => {
   const config = VARIANT_CONFIG[properties.variant as keyof typeof VARIANT_CONFIG] || VARIANT_CONFIG.info;
 
   return (
-    <div className={`custom-ui-card variant-\${properties.variant || 'info'}`} style={{
-      border: `2px solid \${config.border}`,
+    <div className={`custom-ui-card variant-${properties.variant || 'info'}`} style={{
+      border: `2px solid ${config.border}`,
       backgroundColor: config.bg,
       padding: '20px',
       borderRadius: '12px',

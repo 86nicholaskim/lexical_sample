@@ -28,11 +28,12 @@ function App() {
       desc: '상태 변경 시 데이터가 규격을 따르는지 검증합니다. 에디터 삽입 전 최종 데이터 검문소 역할을 합니다.',
       file: 'src/types/ast.ts',
       code: `export interface ComponentAST {
-  type: '\${rawInput.type}';
-  properties: { title: string; ... };
-}`,
+    type: '${rawInput.type}';
+    properties: { title: string; ... };
+    }`,
       active: true
     },
+
     {
       step: '3. Lexical Node',
       desc: '실행 버튼 클릭 시 editor.update()가 호출되어, 신규 노드가 Lexical의 EditorState 트리에 등록됩니다.',

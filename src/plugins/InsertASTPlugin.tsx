@@ -11,8 +11,8 @@ export function InsertASTPlugin() {
       const ast: ComponentAST = {
         type,
         properties: {
-          title: `신규 \${type} UI`,
-          content: `\${variant} 스타일로 생성된 커스텀 컴포넌트입니다.`,
+          title: `신규 ${type} UI`,
+          content: `${variant} 스타일로 생성된 커스텀 컴포넌트입니다.`,
           variant,
         },
       };

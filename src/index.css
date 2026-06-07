@@ -47,7 +47,7 @@ body {
   background-color: #1a202c;
   color: #e2e8f0;
   padding: 12px;
-  borderRadius: 8px;
+  border-radius: 8px;
   font-size: 11px;
   font-family: 'Fira Code', monospace;
   overflow-x: auto;
