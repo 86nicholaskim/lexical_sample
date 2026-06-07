@@ -3,6 +3,6 @@ export interface ComponentAST {
   properties: {
     title: string;
     content: string;
-    variant?: 'success' | 'warning' | 'error' | 'info';
+    variant?: 'success' | 'alert' | 'info';
   };
 }
